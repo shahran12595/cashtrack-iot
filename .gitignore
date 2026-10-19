@@ -1,0 +1,7 @@
+node_modules/
+test-results/
+playwright-report/
+firmware/test/test_core
+.env
+*.pem
+.DS_Store

@@ -1,0 +1,23 @@
+{
+  "name": "cashtrack-iot",
+  "version": "1.0.0",
+  "description": "CashTrack IoT: an AI-powered, IoT-based smart wallet and home vault for tracking physical cash",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "npm run test:unit && npm run test:firmware",
+    "test:unit": "node --test \"core/test/*.test.js\" \"backend/test/*.test.js\"",
+    "test:firmware": "make -C firmware/test",
+    "test:e2e": "playwright test",
+    "test:all": "npm test && npm run test:e2e",
+    "start": "node backend/src/server.js",
+    "start:env": "node --env-file=.env backend/src/server.js",
+    "keys": "node scripts/gen-keys.js keys",
+    "serve": "node scripts/serve.js simulator 8080"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.0"
+  }
+}
