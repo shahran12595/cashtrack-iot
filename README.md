@@ -135,8 +135,6 @@ The design and the known-risk list are in the project's security self-assessment
 
 ## Team
 
-[Team name] · [Member names] · [University], CSE499A
-
 ## License
 
 [MIT](LICENSE)
