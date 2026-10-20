@@ -112,8 +112,8 @@ Pins are set in `firmware/wallet/config.h`.
 arduino-cli core install esp32:esp32@3.0.7 \
   --additional-urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
 arduino-cli lib install "Adafruit Fingerprint Sensor Library"
-arduino-cli compile --fqbn espressif:esp32:XIAO_ESP32S3:PSRAM=opi firmware/wallet
-arduino-cli upload  --fqbn espressif:esp32:XIAO_ESP32S3:PSRAM=opi -p /dev/ttyACM0 firmware/wallet
+arduino-cli compile --fqbn esp32:esp32:XIAO_ESP32S3:PSRAM=opi firmware/wallet
+arduino-cli upload  --fqbn esp32:esp32:XIAO_ESP32S3:PSRAM=opi -p /dev/ttyACM0 firmware/wallet
 ```
 
 ### First run
